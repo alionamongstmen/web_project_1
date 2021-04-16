@@ -67,6 +67,47 @@ height: 31px;
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2F80ED;
+}
+
+.two_columns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 175px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.two_columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration-color: #2F80ED;
+}
+
+.two__columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.two__columns__paragraph {
+  justify-content: space-between;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two__columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+  
 }
 
 /* including elements with key-value modifiers */
