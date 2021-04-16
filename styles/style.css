@@ -1,3 +1,4 @@
+
 .page {
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
@@ -10,107 +11,130 @@
 }
 
 .header {
-  height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* parameters for the header section */
+  position: relative;
+  width: 100%;
+  background-color: #f2f2f2;
 }
 
 .logo {
-width: 154px;
-height: 31px;
+  position: absolute;
+  z-index: 1;
 }
 
 .logo_place_header {
-  position: absolute;
+  width: 154px;
+  height: 31px;
   top: 30px;
-  left: 64px;
-  z-index: 1;
+  left: 64px; 
 }
 
 .header__title {
   width: 730px;
+  position: absolute;
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-left: 64px;
-  z-index: 1;
+  z-index: 2;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  text-align: left;
+  color: #000;
 }
 
 .header__subtitle {
   position: absolute;
   left: 64px;
   bottom: 30px;
-  z-index: 1;
+  width: 388px;
+  text-align: left;
+  z-index: 2;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  color: #000;
 }
 
 .header__link {
-  text-decoration-color: #2F80ED;
+  color: #2F80ED;
 }
 
 .header__main-illustration {
   width: 756px;
   height: 608px;
   position: absolute;
-  display: flex;
-  justify-content: flex-end;
-
+  right: 0;
+  top: 64px;
+  bottom: 0;
+  z-index: 1;
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  bottom: 0;
   background-color: #2F80ED;
+}
+
+.description {
+  margin-top: 100px;
+  position: relative;
 }
 
 .two_columns {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-height: 175px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 784px;
+  min-height: 100px;
 }
 
 .two_columns__brief {
+  display: flex;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  text-decoration-color: #2F80ED;
+  margin: 0;
+  color: #2F80ED;
 }
 
 .two__columns__main-text {
   width: 80%;
   min-width: 784px;
-  display: flex;
-  flex-direction: column;
-
+  display: table-column;
+  align-items: flex-start;
 }
 
 .two__columns__paragraph {
-  justify-content: space-between;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.two_columns__paragraph:last of type {
+  margin-bottom: 0;
 }
 
 .two__columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
-  
+  color: #000;
 }
 
-/* including elements with key-value modifiers */
+.digits {
+
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
