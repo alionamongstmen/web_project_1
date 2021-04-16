@@ -16,6 +16,53 @@
   /* parameters for the header section */
 }
 
+.logo {
+width: 154px;
+height: 31px;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 1;
+}
+
+.header__title {
+  width: 730px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 64px;
+  z-index: 1;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  z-index: 1;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__link {
+  text-decoration-color: #2F80ED;
+}
+
+.header__main-illustration {
+  width: 756px;
+  height: 608px;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   height: 568px;
