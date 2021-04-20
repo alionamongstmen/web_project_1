@@ -120,7 +120,7 @@
   margin-bottom: 30px;
 }
 
-.two-columns__paragraph :last of type {
+.two-columns__paragraph:nth-last-of-type(2) {
   margin-bottom: 0;
 }
 
