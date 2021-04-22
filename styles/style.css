@@ -287,10 +287,8 @@
 
 .footer {
   width: auto;
-  min-height: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
-  position: relative;
   background-color: #000;
   color: #ffffff;
 }
@@ -307,19 +305,24 @@
   margin-bottom: 16px;
 }
 
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .footer__column_content_copyright {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   flex-basis: 711px;
-  position: absolute;
 }
 
 .logo_place_footer {
+  display: flex;
   width: 183px;
   height: 35px;
   color: #ffffff;
-  -webkit-filter: invert(1);
 }
 
 .footer__author {
@@ -340,7 +343,6 @@
 }
 
 .footer__column-heading {
-  width: 20px;
   margin: 0;
   margin-bottom: 20px;
   line-height: 30px;
@@ -362,13 +364,13 @@
 }
 
 .footer__column_content_social {
-  display: flex;
   line-height: 30px;
 }
 
-.footer__social-icon {
+.footer__social-icons {
   height: 16px;
   width: 16px;
+  padding: 10px;
 }
 
 
