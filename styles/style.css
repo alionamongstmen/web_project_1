@@ -287,7 +287,6 @@
 
 .footer {
   width: auto;
-  display: flex;
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #000;
@@ -297,8 +296,7 @@
 .footer__columns {
   display: flex;
   flex-basis: 711px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-between;
   margin: auto;
   width: 90%;
 }
@@ -310,11 +308,14 @@
 .footer__column {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .footer__column_content_copyright {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  flex-basis: 711px;
 }
 
 .logo_place_footer {
@@ -337,7 +338,6 @@
 
 .footer__column_content_about {
   display: flex;
-  flex-direction: column;
   text-align: right;
   vertical-align: middle;
 }
@@ -360,7 +360,6 @@
 .footer__column-link {
   line-height: 30px;
   font-size: 18px;
-  padding: 0;
   list-style-type: none;
   color: #ffffff;
 }
@@ -372,7 +371,7 @@
 .footer__social-icons {
   height: 16px;
   width: 16px;
-  padding: 10px;
+  padding: 0;
 }
 
 
