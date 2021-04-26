@@ -16,10 +16,9 @@
     <header class="header">
       <img class="logo logo_place_header" src="images/logo_place_header.png" alt="Practicum logo">
       <h1 class="header__title">Learning How to Learn</h1>
-      <h3 class="header__subtitle">The most effective, cutting-edge learning techniques that you can apply to your daily life.
-        <br>
+      <p class="header__subtitle">The most effective, cutting-edge learning techniques that you can apply to your daily life.
         <a href="#" class="header__link">Learn More &#x2192;</a>
-      </h3>
+      </p>
       <img class="header__main-illustration" src="images/header-image.png" alt="Man atop a mountain in contemplation about life and learning">
       <div class="header__square-pic"></div>
     </header>
@@ -40,7 +39,7 @@
 
       <section class="digits">
         <h2 class="section-title">Facts and Figures</h2>
-        <h3 class="section-subtitle">On Learning and the Brain</h3>
+        <p class="section-subtitle">On Learning and the Brain</p>
         <ul class="table">
           <li class="table__cell">
             <h4 class="table__heading">86 Billion</h4>
@@ -81,13 +80,13 @@
 
       <section class="feynman">
         <h2 class="feynman__title">The Feynman Technique</h2>
-        <h3 class="feynman__subtitle">Learn without forgetting</h3>
-        <a class="feynman__link" href="#">More &#x2192</a>
+        <p class="feynman__subtitle">Learn without forgetting</p>
+        <a class="feynman__link" href="#">More &#x2192;</a>
       </section>
 
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">Ten principles of rapid skill acquisition</h2>
-        <h3 class="section-subtitle section-subtitle_theme_dark">by Josh Kaufman</h3>
+        <p class="section-subtitle section-subtitle_theme_dark">by Josh Kaufman</p>
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading table__heading_theme_dark">1.</h3>
@@ -130,7 +129,7 @@
             <p class="table__text table__text_theme_dark">Emphasize quantity and speed</p>
           </li>
         </ul>
-        <img class="kaufman__triangle" src="images/kaufman-triangle.svg" alt="big blue triangle for background decoration">
+        <div class="kaufman__triangle"></div>
       </section>
     </main>
 
@@ -138,22 +137,26 @@
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
           <img class="logo logo_place_footer" src="images/logo_place_footer.png" alt="Practicum logo">
-          <p class="footer__author">&copy; 2021 alionamongstmen</p>
+          <p class="footer__author"><span>&#xa9;</span>2021 alionamongstmen</p>
         </div>
       <div class="footer__column footer__column_content_about">
         <h4 class="footer__column-heading">About Practicum by Yandex</h4>
-        <ul class="footer__list">
-          <li><a class="footer__column footer__column-link link" href="#">Home Page</a></li>
-          <li><a class="footer__column footer__column-link link" href="#">Mission</a></li>
-          <li><a class="footer__column footer__column-link link" href="#">Professions</a></li>
-        </ul>
+        <nav class="footer__list">
+          <ol>
+          <li><a class="footer__column-link" href="#">Home Page</a></li>
+          <li><a class="footer__column-link" href="#">Mission</a></li>
+          <li><a class="footer__column-link" href="#">Professions</a></li>
+        </ol>
+        </nav>
       </div>
       <div class="footer__column footer__column_content_social">
         <h4 class="footer__column-heading">Social Media</h4>
-        <ul class="footer__list">
-          <li><img class="footer__social-icons" src="images/facebook_white.svg" alt="facebook logo"><a class="footer__column-link link" href="#">Facebook</a></li>
-          <li><img class="footer__social-icons" src="images/instagram_white.svg" alt="instagram logo"><a class="footer__column-link link" href="#">Instagram</a></li>
-        </ul>
+         <nav class="footer__list">
+          <ol>
+           <li><a class="footer__column-link" href="#"><img class="footer__social-icons" src="images/facebook_white.svg" alt="facebook logo">Facebook</a></li>
+           <li><a class="footer__column-link" href="#"><img class="footer__social-icons" src="images/instagram_white.svg" alt="instagram logo">Instagram</a></li>
+          </ol>
+         </nav>
       </div>
       </div>
     </footer>
