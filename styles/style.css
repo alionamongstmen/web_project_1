@@ -15,9 +15,9 @@
   max-height: 756px;
   position: relative;
   width: 100%;
+  height: 100vh;
   background-color: #f2f2f2;
   display: flex;
-  justify-content: space-around;
 }
 
 .logo {
@@ -34,8 +34,8 @@
 
 .header__title {
   width: 730px;
-  align-items: center;
   margin-left: 64px;
+  align-self: center;
   z-index: 2;
   line-height: 96px;
   font-size: 102px;
@@ -268,7 +268,7 @@
 }
 
 .kaufman__triangle {
-  background-image: url("images/.kaufman__triangle");
+  background-image: url("../images/kaufman-triangle.svg");
   width: 660px;
   height: 636px;
   position: absolute;
